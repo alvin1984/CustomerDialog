@@ -67,11 +67,6 @@ public class CustomerDialog {
         return this;
     }
 
-    public CustomerDialog addBtnPanel(int layoutId){
-        mBaseDialog.addBtnPanel(layoutId);
-        return this;
-    }
-
     public CustomerDialog addNegativeBtn(String title, final DialogClickListener listener){
         mBaseDialog.addNegativeBtn(title,new View.OnClickListener() {
             @Override
@@ -115,11 +110,6 @@ public class CustomerDialog {
         mBaseDialog.setDialogWidthSizeWithRate(widthRate);
         return this;
     }
-
-//    public CustomerDialog setWrapContentParent(){
-//        mBaseDialog.setWrapContentParent();
-//        return this;
-//    }
 
     /**
      * 设置弹窗的显示时间
