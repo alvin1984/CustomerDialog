@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingBottom="30dp"
+              android:paddingTop="30dp"
+              android:gravity="center"
+              android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/base_library_dialog_icon_finger_print"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="“流通金服”的触控ID"
+        android:textColor="#FF212121"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tv_trips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="通过指纹验证已有手机指纹"
+        android:textColor="#FF1B1B1B"
+        android:textSize="14sp"/>
+
+
+</LinearLayout>

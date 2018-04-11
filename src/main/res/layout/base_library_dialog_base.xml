@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="0dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginLeft="17dp">
+
+        <LinearLayout
+            android:id="@+id/root_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFE1E1E1"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0">
+
+            </FrameLayout>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#FFA6A6AD"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/button_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:id="@+id/base_lib_iv_close"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_gravity="right"
+        android:background="@drawable/base_library_dialog_close_btn_cricle_bg"
+        android:src="@drawable/base_library_dialog_icon_close"
+        android:visibility="gone"/>
+</FrameLayout>
